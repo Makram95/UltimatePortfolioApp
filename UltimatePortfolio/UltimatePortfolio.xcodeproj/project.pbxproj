@@ -14,6 +14,8 @@
 		B415C7C125B98F7000FAC7AA /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B415C7BF25B98F7000FAC7AA /* Main.xcdatamodeld */; };
 		B415C7C425B9924500FAC7AA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415C7C325B9924500FAC7AA /* DataController.swift */; };
 		B415C7CB25B998ED00FAC7AA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B415C7CA25B998ED00FAC7AA /* CloudKit.framework */; };
+		B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415C7CC25B9A37200FAC7AA /* HomeView.swift */; };
+		B415C7D025B9A3F600FAC7AA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B415C7C325B9924500FAC7AA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B415C7C725B998CD00FAC7AA /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		B415C7CA25B998ED00FAC7AA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B415C7CC25B9A37200FAC7AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				B415C7C725B998CD00FAC7AA /* UltimatePortfolio.entitlements */,
 				B415C7AF25B98BDD00FAC7AA /* UltimatePortfolioApp.swift */,
 				B415C7B125B98BDD00FAC7AA /* ContentView.swift */,
+				B415C7CC25B9A37200FAC7AA /* HomeView.swift */,
+				B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */,
 				B415C7B325B98BDF00FAC7AA /* Assets.xcassets */,
 				B415C7B825B98BDF00FAC7AA /* Info.plist */,
 				B415C7BF25B98F7000FAC7AA /* Main.xcdatamodeld */,
@@ -158,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B415C7D025B9A3F600FAC7AA /* ProjectsView.swift in Sources */,
 				B415C7C125B98F7000FAC7AA /* Main.xcdatamodeld in Sources */,
 				B415C7C425B9924500FAC7AA /* DataController.swift in Sources */,
 				B415C7B225B98BDD00FAC7AA /* ContentView.swift in Sources */,
+				B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */,
 				B415C7B025B98BDD00FAC7AA /* UltimatePortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

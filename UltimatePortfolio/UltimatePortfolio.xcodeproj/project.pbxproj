@@ -16,6 +16,8 @@
 		B415C7CB25B998ED00FAC7AA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B415C7CA25B998ED00FAC7AA /* CloudKit.framework */; };
 		B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415C7CC25B9A37200FAC7AA /* HomeView.swift */; };
 		B415C7D025B9A3F600FAC7AA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */; };
+		B45BD6D025B9ACE500611FE3 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BD6CF25B9ACE500611FE3 /* Item-CoreDataHelpers.swift */; };
+		B45BD6D325B9AD4E00611FE3 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B415C7CA25B998ED00FAC7AA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B415C7CC25B9A37200FAC7AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		B45BD6CF25B9ACE500611FE3 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				B415C7C725B998CD00FAC7AA /* UltimatePortfolio.entitlements */,
 				B415C7AF25B98BDD00FAC7AA /* UltimatePortfolioApp.swift */,
 				B415C7B125B98BDD00FAC7AA /* ContentView.swift */,
+				B45BD6CF25B9ACE500611FE3 /* Item-CoreDataHelpers.swift */,
+				B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */,
 				B415C7CC25B9A37200FAC7AA /* HomeView.swift */,
 				B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */,
 				B415C7B325B98BDF00FAC7AA /* Assets.xcassets */,
@@ -170,6 +176,8 @@
 				B415C7B225B98BDD00FAC7AA /* ContentView.swift in Sources */,
 				B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */,
 				B415C7B025B98BDD00FAC7AA /* UltimatePortfolioApp.swift in Sources */,
+				B45BD6D325B9AD4E00611FE3 /* Project-CoreDataHelpers.swift in Sources */,
+				B45BD6D025B9ACE500611FE3 /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

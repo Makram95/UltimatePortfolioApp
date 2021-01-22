@@ -10,6 +10,8 @@ import Foundation
 
 extension Project {
     
+    static let colors = ["Pink","Purple","Red","Orange","Gold","Green","Teal","Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    
     var projectTitle: String {
         title ?? ""
     }
@@ -22,6 +24,7 @@ extension Project {
     var projectColor: String{
         color ?? "Light Blue"
     }
+    
     var projectItems: [Item]{
         let itemsArray = items?.allObjects as? [Item] ?? []
         

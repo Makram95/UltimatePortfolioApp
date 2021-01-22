@@ -23,6 +23,7 @@
 		B489170225BAC5A50072A71B /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170125BAC5A50072A71B /* Binding-OnChange.swift */; };
 		B489170525BAC92C0072A71B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170425BAC92C0072A71B /* ProjectHeaderView.swift */; };
 		B489170825BACBC70072A71B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B489170725BACBC70072A71B /* Colors.xcassets */; };
+		B489170B25BACF9B0072A71B /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170A25BACF9B0072A71B /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B489170125BAC5A50072A71B /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		B489170425BAC92C0072A71B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		B489170725BACBC70072A71B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B489170A25BACF9B0072A71B /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				B45BD6D925B9BB5200611FE3 /* ItemRowView.swift */,
 				B415C7B325B98BDF00FAC7AA /* Assets.xcassets */,
 				B489170725BACBC70072A71B /* Colors.xcassets */,
+				B489170A25BACF9B0072A71B /* EditProjectView.swift */,
 				B415C7B825B98BDF00FAC7AA /* Info.plist */,
 				B415C7BF25B98F7000FAC7AA /* Main.xcdatamodeld */,
 				B415C7C325B9924500FAC7AA /* DataController.swift */,
@@ -190,6 +193,7 @@
 				B489170525BAC92C0072A71B /* ProjectHeaderView.swift in Sources */,
 				B415C7C125B98F7000FAC7AA /* Main.xcdatamodeld in Sources */,
 				B415C7C425B9924500FAC7AA /* DataController.swift in Sources */,
+				B489170B25BACF9B0072A71B /* EditProjectView.swift in Sources */,
 				B415C7B225B98BDD00FAC7AA /* ContentView.swift in Sources */,
 				B45BD6DA25B9BB5200611FE3 /* ItemRowView.swift in Sources */,
 				B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */,

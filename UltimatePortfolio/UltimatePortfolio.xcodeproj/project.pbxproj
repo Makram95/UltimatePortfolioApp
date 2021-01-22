@@ -20,6 +20,7 @@
 		B45BD6D325B9AD4E00611FE3 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */; };
 		B45BD6D725B9B78300611FE3 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BD6D625B9B78200611FE3 /* EditItemView.swift */; };
 		B45BD6DA25B9BB5200611FE3 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BD6D925B9BB5200611FE3 /* ItemRowView.swift */; };
+		B489170225BAC5A50072A71B /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170125BAC5A50072A71B /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		B45BD6D625B9B78200611FE3 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		B45BD6D925B9BB5200611FE3 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		B489170125BAC5A50072A71B /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				B415C7AF25B98BDD00FAC7AA /* UltimatePortfolioApp.swift */,
 				B415C7B125B98BDD00FAC7AA /* ContentView.swift */,
 				B45BD6D625B9B78200611FE3 /* EditItemView.swift */,
+				B489170125BAC5A50072A71B /* Binding-OnChange.swift */,
 				B45BD6CF25B9ACE500611FE3 /* Item-CoreDataHelpers.swift */,
 				B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */,
 				B415C7CC25B9A37200FAC7AA /* HomeView.swift */,
@@ -182,6 +185,7 @@
 				B415C7B225B98BDD00FAC7AA /* ContentView.swift in Sources */,
 				B45BD6DA25B9BB5200611FE3 /* ItemRowView.swift in Sources */,
 				B415C7CD25B9A37200FAC7AA /* HomeView.swift in Sources */,
+				B489170225BAC5A50072A71B /* Binding-OnChange.swift in Sources */,
 				B415C7B025B98BDD00FAC7AA /* UltimatePortfolioApp.swift in Sources */,
 				B45BD6D325B9AD4E00611FE3 /* Project-CoreDataHelpers.swift in Sources */,
 				B45BD6D025B9ACE500611FE3 /* Item-CoreDataHelpers.swift in Sources */,

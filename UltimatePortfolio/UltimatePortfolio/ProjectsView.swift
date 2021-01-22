@@ -13,8 +13,10 @@ struct ProjectsView: View {
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
     
-    let showClosedProjects: Bool
+    @State private var showingSortOrder = false
+    @State private var sortOrder = Item.SortOrder.optimized
     
+    let showClosedProjects: Bool
     let projects: FetchRequest<Project>
     
     init(showClosedProjects: Bool) {
@@ -28,7 +30,7 @@ struct ProjectsView: View {
             List{
                 ForEach(projects.wrappedValue){ project in
                     Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems){ item in
+                        ForEach(project.projectItems(using: sortOrder)){ item in
                             ItemRowView(item: item)
                         }
                         .onDelete{ offsets in
@@ -58,21 +60,38 @@ struct ProjectsView: View {
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ?  "Closed Projects" : "Open Projects")
             .toolbar {
-                if showClosedProjects == false {
-                    Button {
-                        withAnimation {
-                            let project = Project(context: managedObjectContext)
-                            project.closed = false
-                            project.creationDate = Date()
-                            dataController.save()
+                ToolbarItem(placement: .navigationBarTrailing){
+                    if showClosedProjects == false {
+                        Button {
+                            withAnimation {
+                                let project = Project(context: managedObjectContext)
+                                project.closed = false
+                                project.creationDate = Date()
+                                dataController.save()
+                            }
+                        } label: {
+                            Label("Add Project", systemImage: "plus")
                         }
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading){
+                    Button{
+                        showingSortOrder.toggle()
                     } label: {
-                        Label("Add Project", systemImage: "plus")
+                        Label("Sort", systemImage: "arrow.up.arrow.down")
                     }
                 }
             }
+            .actionSheet(isPresented: $showingSortOrder) {
+                ActionSheet(title: Text("Sort items"), message: nil, buttons: [
+                    .default(Text("Optimized")) { sortOrder = .optimized},
+                    .default(Text("Creation Date")) { sortOrder = .creationDate},
+                    .default(Text("Title")) {sortOrder = .title}
+                ])
+            }
         }
     }
+    
 }
 
 struct ProjectsView_Previews: PreviewProvider {

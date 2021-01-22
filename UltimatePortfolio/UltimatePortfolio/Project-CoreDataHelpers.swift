@@ -25,7 +25,6 @@ extension Project {
     var projectItems: [Item]{
         let itemsArray = items?.allObjects as? [Item] ?? []
         
-    
         return itemsArray.sorted{ first, second in
             if first.completed == false {
                 if second.completed {

@@ -30,6 +30,7 @@
 		B492DAD725BEC05C00F3A815 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = B492DAD625BEC05C00F3A815 /* Awards.json */; };
 		B492DADA25BEC0FC00F3A815 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492DAD925BEC0FB00F3A815 /* Award.swift */; };
 		B492DADD25BEC19000F3A815 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492DADC25BEC19000F3A815 /* AwardsView.swift */; };
+		B492DAE025BECB5D00F3A815 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492DADF25BECB5D00F3A815 /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B492DAD625BEC05C00F3A815 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		B492DAD925BEC0FB00F3A815 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		B492DADC25BEC19000F3A815 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		B492DADF25BECB5D00F3A815 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B45BD6D225B9AD4E00611FE3 /* Project-CoreDataHelpers.swift */,
 				B489170425BAC92C0072A71B /* ProjectHeaderView.swift */,
 				B415C7CC25B9A37200FAC7AA /* HomeView.swift */,
+				B492DADF25BECB5D00F3A815 /* Color-Additions.swift */,
 				B415C7CF25B9A3F600FAC7AA /* ProjectsView.swift */,
 				B489171025BB101C0072A71B /* SelectSomethingView.swift */,
 				B489170D25BB001E0072A71B /* SequenceSorting.swift */,
@@ -213,6 +216,7 @@
 				B492DADD25BEC19000F3A815 /* AwardsView.swift in Sources */,
 				B415C7C125B98F7000FAC7AA /* Main.xcdatamodeld in Sources */,
 				B415C7C425B9924500FAC7AA /* DataController.swift in Sources */,
+				B492DAE025BECB5D00F3A815 /* Color-Additions.swift in Sources */,
 				B489170B25BACF9B0072A71B /* EditProjectView.swift in Sources */,
 				B415C7B225B98BDD00FAC7AA /* ContentView.swift in Sources */,
 				B489171125BB101C0072A71B /* SelectSomethingView.swift in Sources */,

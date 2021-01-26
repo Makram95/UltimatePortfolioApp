@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @SceneStorage("selectedView") var selectedView: String?
-    
+
     var body: some View {
-        TabView(selection: $selectedView){
+        TabView(selection: $selectedView) {
             HomeView()
                 .tag(HomeView.tag)
                 .tabItem {
@@ -21,13 +21,13 @@ struct ContentView: View {
                 }
             ProjectsView(showClosedProjects: false)
                 .tag(ProjectsView.openTag)
-                .tabItem{
+                .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Open")
                 }
             ProjectsView(showClosedProjects: true)
                 .tag(ProjectsView.closedTag)
-                .tabItem{
+                .tabItem {
                     Image(systemName: "checkmark")
                     Text("Closed")
                 }

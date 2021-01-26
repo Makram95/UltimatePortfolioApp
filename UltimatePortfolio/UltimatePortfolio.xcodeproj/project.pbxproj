@@ -89,7 +89,6 @@
 		B415C7A325B98BDD00FAC7AA = {
 			isa = PBXGroup;
 			children = (
-				B492DAD325BEBA9200F3A815 /* Bundle-Decodable.swift */,
 				B415C7AE25B98BDD00FAC7AA /* UltimatePortfolio */,
 				B415C7AD25B98BDD00FAC7AA /* Products */,
 				B415C7C925B998ED00FAC7AA /* Frameworks */,
@@ -107,6 +106,7 @@
 		B415C7AE25B98BDD00FAC7AA /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				B492DAD325BEBA9200F3A815 /* Bundle-Decodable.swift */,
 				B415C7C725B998CD00FAC7AA /* UltimatePortfolio.entitlements */,
 				B415C7AF25B98BDD00FAC7AA /* UltimatePortfolioApp.swift */,
 				B415C7B125B98BDD00FAC7AA /* ContentView.swift */,
@@ -163,6 +163,7 @@
 			buildConfigurationList = B415C7BB25B98BDF00FAC7AA /* Build configuration list for PBXNativeTarget "UltimatePortfolio" */;
 			buildPhases = (
 				B415C7A825B98BDD00FAC7AA /* Sources */,
+				B49E3E4025C0813200A36ED0 /* SwiftLint */,
 				B415C7A925B98BDD00FAC7AA /* Frameworks */,
 				B415C7AA25B98BDD00FAC7AA /* Resources */,
 			);
@@ -222,6 +223,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B49E3E4025C0813200A36ED0 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B415C7A825B98BDD00FAC7AA /* Sources */ = {

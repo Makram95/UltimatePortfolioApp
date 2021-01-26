@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 extension Project {
@@ -83,5 +84,9 @@ extension Project {
             return projectItemsDefaultSorted
             
         }
+    }
+    
+    var label: LocalizedStringKey{
+       LocalizedStringKey( "\(projectTitle), \(projectItems.count) items, \(completionAmmount*100, specifier: "%g")% complete.")
     }
 }

@@ -20,7 +20,7 @@ struct EditProjectView: View {
     let colorCollumns = [
         GridItem(.adaptive(minimum: 44))
     ]
-
+    
     init(project: Project) {
         self.project = project
         _title = State(wrappedValue: project.projectTitle)
@@ -34,33 +34,14 @@ struct EditProjectView: View {
                 TextField("Project name", text: $title.onChange(update))
                 TextField("Description", text: $detail.onChange(update))
             }
+            
             Section(header: Text("Custom project Color")) {
                 LazyVGrid(columns: colorCollumns) {
-                    ForEach(Project.colors, id: \.self){ item in
-                        ZStack{
-                            Color(item)
-                                .aspectRatio(1,contentMode: .fit)
-                                .cornerRadius(6)
-                            
-                            if item == color {
-                                Image(systemName: "checkmark.circle")
-                                    .foregroundColor(.white)
-                                    .font(.largeTitle)
-                            }
-                        }
-                        .onTapGesture{
-                            color = item
-                            update()
-                        }
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityAddTraits(
-                            item == color ? [.isButton, .isSelected] : .isButton
-                        )
-                        .accessibilityLabel(LocalizedStringKey(item))
-                    }
+                    ForEach(Project.colors, id: \.self, content: colorButton)
                 }
                 .padding(.vertical)
             }
+            
             Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")){
                 Button(project.closed ? "Reopen this project" : "Close this project"){
                     project.closed.toggle()
@@ -78,6 +59,31 @@ struct EditProjectView: View {
             Alert(title: Text("Delete project?"), message: Text("Are you sure you want to delete this project? It will also delete all the items it contains."), primaryButton: .default(Text("Delete"),action: delete), secondaryButton: .cancel())
         }
     }
+    
+    
+    func colorButton(for item: String) -> some View{
+        ZStack{
+            Color(item)
+                .aspectRatio(1,contentMode: .fit)
+                .cornerRadius(6)
+            
+            if item == color {
+                Image(systemName: "checkmark.circle")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+            }
+        }
+        .onTapGesture{
+            color = item
+            update()
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityAddTraits(
+            item == color ? [.isButton, .isSelected] : .isButton
+        )
+        .accessibilityLabel(LocalizedStringKey(item))
+    }
+    
     func update(){
         project.title = title
         project.detail = detail

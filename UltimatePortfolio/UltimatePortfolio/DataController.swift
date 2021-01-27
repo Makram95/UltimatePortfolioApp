@@ -46,7 +46,6 @@ class DataController: ObservableObject {
         return dataController
     }()
 
-
     /// Creates sample projects and items
     /// - Throws: NSError sent from calling save() on the NSManagedObjectContext
     func createSampleDate() throws {

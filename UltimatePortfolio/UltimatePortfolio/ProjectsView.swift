@@ -56,6 +56,7 @@ struct ProjectsView: View {
         ToolbarItem(placement: .navigationBarTrailing) {
             if showClosedProjects == false {
                 Button(action: addProject) {
+                    // iOS 14.3 voiceover has a glitch that reads the lable as "add" only, therefore we add a textview when voiceover is running
                     if UIAccessibility.isVoiceOverRunning {
                         Text("Add Project")
                     } else {

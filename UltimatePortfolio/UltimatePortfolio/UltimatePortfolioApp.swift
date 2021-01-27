@@ -22,6 +22,7 @@ struct UltimatePortfolioApp: App {
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .onReceive(
+                    // automatically saves if app goes to background
                     NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification),
                     perform: save)
         }

@@ -18,38 +18,6 @@
             endingLineNumber = "22"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "3AE74F59-8667-4866-8AA8-7A2D09FEC8DF - b2780d5cef057661"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UltimatePortfolio.ItemListView.body.getter : some"
-                  moduleName = "UltimatePortfolio"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/makram/Repositories/UltimatePortfolioApp/UltimatePortfolio/UltimatePortfolio/ItemListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "1768">
-               </Location>
-               <Location
-                  uuid = "3AE74F59-8667-4866-8AA8-7A2D09FEC8DF - 3ce78b4056dcf271"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (UltimatePortfolio.Item) -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.shadow(color: SwiftUI.Color, radius: CoreGraphics.CGFloat, x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, UltimatePortfolio.EditItemView&gt; in UltimatePortfolio.ItemListView.body.getter : some"
-                  moduleName = "UltimatePortfolio"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/makram/Repositories/UltimatePortfolioApp/UltimatePortfolio/UltimatePortfolio/ItemListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "316">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

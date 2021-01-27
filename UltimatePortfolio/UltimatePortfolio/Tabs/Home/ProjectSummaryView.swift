@@ -16,7 +16,7 @@ struct ProjectSummaryView: View {
                 .foregroundColor(.secondary)
             Text(project.projectTitle)
                 .font(.title2)
-            ProgressView(value: project.completionAmmount)
+            ProgressView(value: project.completionAmount)
                 .accentColor(Color(project.projectColor))
         }
         .padding()

@@ -12,7 +12,7 @@ struct ProjectHeaderView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(project.projectTitle)
-                ProgressView(value: project.completionAmmount)
+                ProgressView(value: project.completionAmount)
                     .accentColor(Color(project.projectColor))
         }
             Spacer()

@@ -63,7 +63,7 @@ extension Project {
         }
     }
 
-    var completionAmmount: Double {
+    var completionAmount: Double {
         let originalItems = items?.allObjects as? [Item] ?? []
         guard originalItems.isEmpty == false else {
             return 0
@@ -73,8 +73,8 @@ extension Project {
     }
 
     static var example: Project {
-        let controler = DataController(inMemory: true)
-        let viewContext = controler.container.viewContext
+        let controller = DataController.preview
+        let viewContext = controller.container.viewContext
 
         let project = Project(context: viewContext)
         project.title = "Example Project"
@@ -99,6 +99,6 @@ extension Project {
 
     var label: LocalizedStringKey {
         // swiftlint:disable:next line_length
-       LocalizedStringKey( "\(projectTitle), \(projectItems.count) items, \(completionAmmount*100, specifier: "%g")% complete.")
+       LocalizedStringKey( "\(projectTitle), \(projectItems.count) items, \(completionAmount*100, specifier: "%g")% complete.")
     }
 }

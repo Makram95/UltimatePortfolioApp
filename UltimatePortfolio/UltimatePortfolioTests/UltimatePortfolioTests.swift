@@ -18,3 +18,4 @@ class BaseTestCase: XCTestCase {
     }
 
 }
+

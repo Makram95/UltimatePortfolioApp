@@ -25,6 +25,7 @@
 		B4755C8925C026FB007DBEB1 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = B4755C8B25C026FB007DBEB1 /* Localizable.stringsdict */; };
 		B4755C9125C03EE8007DBEB1 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755C9025C03EE8007DBEB1 /* ItemListView.swift */; };
 		B4755C9425C03FAA007DBEB1 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4755C9325C03FAA007DBEB1 /* ProjectSummaryView.swift */; };
+		B47A2A7925DA6DFC009DF5AE /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A2A7825DA6DFC009DF5AE /* PerformanceTests.swift */; };
 		B489170225BAC5A50072A71B /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170125BAC5A50072A71B /* Binding-OnChange.swift */; };
 		B489170525BAC92C0072A71B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489170425BAC92C0072A71B /* ProjectHeaderView.swift */; };
 		B489170825BACBC70072A71B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B489170725BACBC70072A71B /* Colors.xcassets */; };
@@ -80,6 +81,7 @@
 		B4755C8E25C0272E007DBEB1 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
 		B4755C9025C03EE8007DBEB1 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		B4755C9325C03FAA007DBEB1 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		B47A2A7825DA6DFC009DF5AE /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		B489170125BAC5A50072A71B /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		B489170425BAC92C0072A71B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		B489170725BACBC70072A71B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				B4D5524A25C195C700D490BF /* UltimatePortfolioTests.swift */,
 				B4D5525425C1975500D490BF /* AssetTests.swift */,
 				B4D5524C25C195C700D490BF /* Info.plist */,
+				B47A2A7825DA6DFC009DF5AE /* PerformanceTests.swift */,
 				B4D5525A25C199A700D490BF /* ProjectTests.swift */,
 				B4D5526425C1B0A800D490BF /* DevelopmentTests.swift */,
 				B4C0AC3F25CD42900003DE1E /* ExtensionTests.swift */,
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47A2A7925DA6DFC009DF5AE /* PerformanceTests.swift in Sources */,
 				B4D5525525C1975500D490BF /* AssetTests.swift in Sources */,
 				B4D5525F25C19C3300D490BF /* AwardTest.swift in Sources */,
 				B4D5524B25C195C700D490BF /* UltimatePortfolioTests.swift in Sources */,

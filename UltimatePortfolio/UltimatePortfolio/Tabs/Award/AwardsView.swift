@@ -35,7 +35,7 @@ struct AwardsView: View {
                                 .foregroundColor(color(for: award))
                         })
                         .accessibilityLabel(label(for: award))
-                        accessibility(hint: Text(award.description))
+                        .accessibility(hint: Text(award.description))
                     }
                 }
             }
